@@ -13,7 +13,7 @@ from sklearn.metrics import root_mean_squared_error
 device = torch.device("cpu")
 #USE IF SYSTEM HAS A GPU - device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-ticker = 'AAPL'
+ticker = 'AAPL' #Use ticker of any company "Apple(AAPL) in this case"
 df = yf.download(ticker, '2020-01-01')
 
 df.Close.plot(figsize=(12, 8))
